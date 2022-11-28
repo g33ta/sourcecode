@@ -51,7 +51,7 @@ jobs:
         id: build-and-push
         uses: docker/build-push-action@ac9327eae2b366085ac7f6a2d02df8aa8ead720a
         with:
-          context: ./sourcecode/src-code
+          context: ./src-code
           file: ./src-code/Dockerfile
           push: true
           tags: ghcr.io/${{ github.repository }}:${{ inputs.docker_tag }}
